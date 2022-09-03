@@ -54,7 +54,7 @@ const useProvideAuth = () => {
 
   const createApolloClient = () => {
     const link = new HttpLink({
-      uri: process.env.API_URI,
+      uri: 'https://social-media-nextjs-app.herokuapp.com/graphql',
       headers: getAuthHeaders()
     });
 
