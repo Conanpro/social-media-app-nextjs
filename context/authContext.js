@@ -54,7 +54,7 @@ const useProvideAuth = () => {
 
   const createApolloClient = () => {
     const link = new HttpLink({
-      uri: "https://cjwqxz.sse.codesandbox.io/",
+      uri: process.env.API_URI,
       headers: getAuthHeaders()
     });
 
