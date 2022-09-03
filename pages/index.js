@@ -17,6 +17,7 @@ const Home = () => {
 
   if (loading) return <p>Loading posts</p>;
   if (error) return <p>Error loading posts</p>;
+  if (error) {console.log(error)}
 
   return <Feed fetchMore={fetchPosts} />;
 };
